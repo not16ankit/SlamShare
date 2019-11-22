@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout tools:context=".account"
+    android:id="@+id/adview"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="340dp"
+    android:layout_marginBottom="170dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:alpha="0.6"
+            android:background="@drawable/button">
+
+            <TextView />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:elevation="25dp"
+                android:text="Old Password"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/oldpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:elevation="25dp"
+                android:text="New Password"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newpass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="25dp"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:elevation="25dp"
+                android:text="Verify New Password"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newpass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="25dp"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+
+        </TableLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="PROCEED"
+        android:layout_toStartOf="@id/space31"
+        android:id="@+id/butnext"
+        android:background="@color/colorPrimary"/>
+    <Space android:layout_width="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space31"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:text="Cancel"
+        android:layout_toEndOf="@id/space31"
+        android:id="@+id/butcan"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>
+    </FrameLayout>
+        </RelativeLayout>
+

@@ -1,0 +1,23 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="Column Name"/>
+    <Space android:layout_height="5dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editextra"
+        android:layout_marginLeft="8dp"
+        android:elevation="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+        android:background="@drawable/button4" />
+</TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

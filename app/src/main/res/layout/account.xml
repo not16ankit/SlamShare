@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipelayout"
+    android:background="@drawable/backcase3"
+    tools:context=".account">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/accountlayout">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+    android:alpha="0.7"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/button">
+    <TextView
+        android:layout_marginTop="130dp"
+        android:elevation="25dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/username"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        android:text="Email"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginLeft="8dp"
+        android:elevation="25dp"
+        android:editable="false"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/usernameeditnew" />
+                <TextView android:id="@+id/username12"
+                    android:elevation="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15dp"
+                    android:textColor="#808080"
+                    android:text="Username" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="#000000"
+                    android:elevation="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameeditusername12"/>
+    <TextView android:id="@+id/name"
+        android:elevation="25dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        android:text="Name" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="#000000"
+                    android:elevation="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameeditnew"/>
+                <RelativeLayout
+                    android:elevation="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/number"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="15dp"
+                        android:textColor="#808080"
+                        android:text="Phone Number"/>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"
+                        android:id="@+id/space2"/>
+                    <AutoCompleteTextView
+                        android:layout_below="@id/space2"
+                        android:textColor="#000000"
+                        android:elevation="25dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ex"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="50dp"
+                        android:inputType="phone"
+                        android:textColorHint="#FFFF00"/>
+                    <Space
+                        android:layout_toEndOf="@id/ex"
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/space"/>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:textColor="#000000"
+                        android:layout_below="@id/space2"
+                        android:layout_toEndOf="@id/space"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/numbereditnew"/>
+                </RelativeLayout>
+
+
+
+    <TableRow>
+    </TableRow>
+    <Space android:layout_height="79dp"/>
+    <Space android:layout_height="30dp"/>
+    <TextView
+        android:elevation="25dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:text="Password is set"
+        android:textColor="#000000" />
+    <Space android:layout_height="90dp"/>
+</TableLayout>
+
+            <Button
+                android:id="@+id/buttonsave"
+                android:layout_marginTop="416dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="SAVE"
+                android:onClick="uploaddetails"
+                android:textColor="#FFFFFF" />
+            <Button
+                android:layout_marginTop="536dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Change"
+                android:onClick="changepass"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_marginTop="11dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user" />
+
+        </FrameLayout>
+    </RelativeLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

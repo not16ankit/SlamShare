@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="LOGIN" android:icon="@drawable/login" android:onClick="fliptosignup"/>
+    <item android:title="SIGN UP" android:icon="@drawable/sign3" android:onClick="fliptologin"/>
+</menu>

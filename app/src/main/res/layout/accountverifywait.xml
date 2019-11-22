@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="ankit.oromap.slamshare.waiting">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#008800"
+            android:textSize="25dp"
+            android:id="@+id/titi"
+            android:textAlignment="center" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:id="@+id/ankit"/>
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textt"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/ankit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:text="OTP has been sent."/>
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textc"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/textt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:text="Waiting for automatic detection...."/>
+        <TextView
+            android:id="@+id/progress3434"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textc"/>
+
+        <Space
+            android:layout_below="@id/progress3434"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:id="@+id/ankit1"/>
+        <Space
+            android:layout_below="@id/textc"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:id="@+id/ankit4"/>
+        <RelativeLayout
+            android:id="@+id/ooprl"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ankit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Verification OTP"
+                android:layout_width="190dp"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edity"
+                android:textColorHint="#FFFFFF"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edity"
+                android:layout_centerHorizontal="true"
+                android:text="SUBMIT"/>
+        </RelativeLayout>
+        <Button
+            android:layout_toStartOf="@id/space45"
+            android:id="@+id/butresend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@color/yellow"
+            android:onClick="resend1"
+            android:text="Resend"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space45"
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/butcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:onClick="resend1"
+            android:text="Cancel"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@id/space45"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imtick"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/passtick" />
+    </FrameLayout>
+</RelativeLayout>

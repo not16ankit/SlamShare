@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:elevation="25dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/question"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        android:text="My Name"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginLeft="8dp"
+        android:textAlignment="viewStart"
+        android:textSize="41dp"
+        android:id="@+id/answer"
+        android:elevation="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:editable="false"
+        android:textColor="#000000"
+        android:background="@drawable/button3" />
+</TableLayout>
